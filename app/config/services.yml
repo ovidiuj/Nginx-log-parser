@@ -1,0 +1,7 @@
+parameters:
+  nginx-log-path: "/../../nginx-example.log"
+  country: "DE"
+services:
+  nginx-log-parser:
+    class: 'Services\NginxLogParser'
+    arguments: ["%nginx-log-path%", "%country%"]

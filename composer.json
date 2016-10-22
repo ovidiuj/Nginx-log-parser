@@ -1,0 +1,24 @@
+{
+  "name"        : "Find the shortest substring",
+  "description" : "The script should take a set of search characters as parameters and using those determine the length of the shortest substring of s that contains all search characters.",
+  "authors"     : [
+    {
+      "name"  : "Ovidiu Juncanariu",
+      "email" : "ovidiu.j@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/yaml": "~2.4",
+    "twig/twig": "~1.8|~2.0",
+    "twig/extensions": "~1.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "Application\\": "Application/"
+    }
+  }
+}

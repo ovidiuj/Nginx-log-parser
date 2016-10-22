@@ -7,8 +7,8 @@
  
  
  
- ## Installation & Usage
+### Installation & Usage
  
- * run ``` composer update ```
- * run ``` vendor/bin/phpunit ```
- * go to ``` http://<your-local-host> ```
+* run ``` composer update ```
+* run ``` vendor/bin/phpunit ```
+* go to ``` http://<your-local-host> ```

@@ -1,0 +1,9 @@
+index:
+    path:      /
+    defaults:  { Controller\IndexController:index }
+    method: GET
+
+json:
+    path:      /json
+    defaults:  { Controller\IndexController:json }
+    method: GET

@@ -1,0 +1,46 @@
+<section id="content">
+
+    <div class="container">
+        <div id="main">
+            <div class="row">
+
+
+                <div class="col-sm-4 col-md-3 pull-right">
+                    <div class="well"><span ng-bind="calculateCount()"></span> Total results</div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="well">
+                        <span>Search <input type="text" ng-model="search"></span>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    <table table-sortable class="table table-bordered">
+                        <tr>
+                            <th th-sortable="remoteAddress">Remote Address</th>
+                            <th th-sortable="serverName">Server Name</th>
+                            <th th-sortable="remoteUser">Remote User</th>
+                            <th th-sortable="timeLocal">Time Local</th>
+                            <th th-sortable="request">Request</th>
+                            <th th-sortable="status">Status</th>
+                            <th th-sortable="bodyBytesSent">Body Bytes Sent</th>
+                            <th th-sortable="httpReferer">Http Referer</th>
+                            <th th-sortable="httpUserAgent">Http User Agent</th>
+                        </tr>
+
+                        <tr ng-repeat="log in logs | filter:search | orderBy: sort.column: sort.direction">
+                            <td ng-bind="log.remoteAddress"></td>
+                            <td ng-bind="log.serverName"></td>
+                            <td ng-bind="log.remoteUser"></td>
+                            <td ng-bind="log.timeLocal"></td>
+                            <td ng-bind="log.request"></td>
+                            <td ng-bind="log.status"></td>
+                            <td ng-bind="log.bodyBytesSent"></td>
+                            <td ng-bind="log.httpReferer"></td>
+                            <td ng-bind="log.httpUserAgent"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

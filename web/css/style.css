@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+tr {
+    font-size: 12px;
+}
+
+td {
+    max-width: 300px;
+    word-wrap: break-word;
+    min-width: 150px;
+}
+
+th {
+    background-color: #b9def0;
+    font-size: 13px;
+    line-height: 10px!important;
+    vertical-align: middle!important;
+}
+tr a.active {
+    background-color: #b9def0;
+    display: block;
+}
+
+tr a.active.desc:after {
+    content: ' ↓';
+    float: right;
+    display:inline-block;
+    position:relative;
+    top:-10px;
+    height: auto;
+}
+
+tr a.active.asc:after {
+    content: ' ↑';
+    float: right;
+    display:inline-block;
+    position:relative;
+    top:-10px;
+    height: auto;
+}
+
+input.ng-valid.ng-dirty {
+    background-color:  #d8ffd0;
+}
+
+input.ng-invalid.ng-dirty {
+    background-color:  #ffc4d0;
+}
+
+.well {
+    font-weight: bold;
+}
