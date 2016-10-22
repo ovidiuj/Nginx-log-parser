@@ -13,7 +13,7 @@
         <log type="tap"/>
     </logging>
     <testsuites>
-        <testsuite name="Render Space Test Suite">
+        <testsuite name="Nginx log parser Test Suite">
             <directory>./src/Tests</directory>
             <directory>./Application/Tests</directory>
         </testsuite>
