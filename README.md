@@ -11,4 +11,4 @@
  
  * run ``` composer update ```
  * run ``` vendor/bin/phpunit ```
- * go to ``` http://<your-local-host>
+ * go to ``` http://<your-local-host> ```
