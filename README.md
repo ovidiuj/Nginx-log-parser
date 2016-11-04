@@ -7,7 +7,7 @@
  
 
 ## Installation & Usage
-  > To run this application into a docker environment you need to install [Docker Engine](https://docs.docker.com/engine/installation/) in case that it is not already installed and to run the following command. If you don't use a docker environment, just skip step 5.
+  > To run this application into a docker environment you need to install [Docker Engine](https://docs.docker.com/engine/installation/) in case that it is not already installed and to run the following command. If you don't use a docker environment, just skip **step 4**.
   
   1. After docker environment is installed follow next steps:
   2. run ``` git clone https://github.com/ovidiuj/Nginx-log-parser ```
