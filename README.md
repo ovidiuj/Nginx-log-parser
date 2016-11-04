@@ -5,10 +5,17 @@
  * Sort and search functionalities, based on AngularJS, are also available in the html grid.
  * An example of Nginx log file is provided in **nginx-example.log** file.
  
+
+## Installation & Usage
  
- 
-### Installation & Usage
- 
-* run ``` composer update ```
-* run ``` vendor/bin/phpunit ```
-* go to ``` http://<your-local-host> ```
+  1. After docker environment is installed follow next steps:
+  2. run ``` git clone https://github.com/ovidiuj/Nginx-log-parser ```
+  3. go to project folder ``` cd Nginx-log-parser ```
+  
+  > To run this application into a docker environment you need to install [Docker Engine](https://docs.docker.com/engine/installation/) in case that it is not already installed and to run the following command. If you don't use a docker environment, just skip the 5th step.
+  >> 5. run ``` docker-compose up -d ```
+  
+  6. run ``` composer update ```
+  7. run ``` vendor/bin/phpunit ```
+  8. go to ``` http://nginx-log.dev:8080/ ```
+
